@@ -1,6 +1,13 @@
-ocra --no-lzma --no-enc --gem-minimal --no-autoload \
+#!/usr/bin/env bash
+
+# See:
+#   https://github.com/larsch/ocra/issues/29#issuecomment-15595769
+
+ocra --no-lzma --no-enc --gem-minimal --no-autoload --windows \
 script-sample-tk.rb \
-/c/Ruby/lib/tcltk/tcl8.5 \
+/c/Ruby/lib/tcltk/tcl8.5/auto.tcl \
+/c/Ruby/lib/tcltk/tcl8.5/init.tcl \
+/c/Ruby/lib/tcltk/tcl8.5/tclIndex \
 /c/Ruby/lib/tcltk/tk8.5/button.tcl \
 /c/Ruby/lib/tcltk/tk8.5/demos/license.terms \
 /c/Ruby/lib/tcltk/tk8.5/entry.tcl \
