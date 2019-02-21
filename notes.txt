@@ -1,0 +1,4 @@
+Think about:
+
+https://github.com/pmq20/ruby-packer
+
